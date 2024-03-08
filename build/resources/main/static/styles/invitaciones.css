@@ -13,7 +13,9 @@ h3{
   margin-bottom: 20px;
 }
 
-
+.box{
+  font-size: 20px;
+}
 
 /* .contenedor-invitaciones-17, .contenedor-invitaciones-18, .contenedor-invitaciones-19 {
     border: solid 3px #666;
@@ -26,11 +28,23 @@ h3{
     display: block;
 } */
 
+.colorLetras1 {
+  color: #732796;
+  font-weight: bolder;
+  font-size: 25px;
+
+} 
+
 .colorLetras {
     color: #732796;
     font-weight: bolder;
+    font-size: 22px;
 
-} 
+}
+
+.resaltar{
+  font-size: 18px;
+}
 
 /*aplicar efecto a imagen de invitación muestra */
 .img-fluid {

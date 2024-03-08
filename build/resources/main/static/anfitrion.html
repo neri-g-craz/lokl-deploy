@@ -48,7 +48,7 @@
             <div class="row">
                 <div class="col-12 sccs ">
                 </div>
-                <div class="container col-6 p-3">
+                <div class="container col-12 p-0">
                     <form class="form-anfitrion">
                         <h1>Completa la información de tu espacio</h1>
                         <div class="mb-3">
@@ -118,14 +118,26 @@
                                 <label for="formFileMultiple" class="form-label">Sube tus fotos</label>
                                 <input class="form-control" type="file" id="inputFotos" multiple>
                             </div>
-                            <button id="toRegistroCompleto" type="submit" class="btn btn-primary"><a href="./registroCompleto.html">Anuncia tu Espacio</a></button>
+                            <!-- <button id="toRegistroCompleto" type="submit" class="btn btn-primary"><a href="./registroCompleto.html">Anuncia tu Espacio</a></button> -->
+                            <button type="button" class="btn btn-primary" onclick="generarTarjeta()">Publica tu espacio</button>
+                            <br>
+                            <br>
+                        
+                            <div class="vistaPrevia col-12">
+                                <h5>Vista previa</h5>
+                                
+                            </div>
+                            <div id="tarjetas"></div>
                     </form>
-                </div>
-
+                
+                <!-- <div>
+                    <div class="container col-6 p-3" id="tarjetas"></div>
+                </div>   -->
             </div>
-            <div class="container caja-imagen col-6 ">
-            </div>
+            <div class="container caja-imagen col-6 "></div>
         </div>
+        
+        
 
 
         <div id="modalContainer"></div>
@@ -162,5 +174,7 @@
         </div>
         <!-------------------------- FOOTER ------------------------>
     </footer>
+    <script>
+    </script>
 </body>
 </html>

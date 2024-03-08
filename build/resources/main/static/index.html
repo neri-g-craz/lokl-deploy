@@ -39,7 +39,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="backg">
         <!------------------------ NAVBAR ----------------------->
         <a href="./index.html"> <img class="logo" src="./assets/multimedia/lokl-logo.png" alt="log" /> </a>
         <button class="abrir-menu" id="abrir">Abrir</button>
@@ -57,9 +57,11 @@
         </nav>
         <!------------------------ NAVBAR ----------------------->
     </header>
+    <br>
+    <br>
+    
 
     <main>
-        <!------------------------ FLEXBOX --------------------------->
         <div class="titulo">
             <b>RENTA</b> tu espacio, <b>INVITA</b> con elegancia y <b>ANUNCIA</b> con impacto.
         </div>
@@ -71,14 +73,17 @@
                 </h1>
             </div>
         </div>
+
         <section class="normal">
             <div class="normal my-4">
                 <div class="row text">
                     <div class="linea">
                     <h1 class="seccion">LUGARES</h1>
                 </div>
-                </div>
+            </div>
+
             <div class="container">
+                
                 <div class="card" style="width: 22rem;">
                     <div>
                         <img src="./assets/paginaprincipal/salon-lucina.jpeg" class="card-img-top" alt="Lugar 1">
@@ -146,93 +151,100 @@
 
             </div>
         </section>
+
         <!-- inicia especial -->
         <section class="espera">
             <div class="container">
-                <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+                <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
                     <div class="carousel-inner">
+
                         <div class="carousel-item active">
-                            <div class="card">
-                                <div class="card" style="width: 22rem;">
-                                    <div>
-                                        <img src="./assets/paginaprincipal/salon-lucina.jpeg" class="card-img-top"
-                                            alt="Lugar 1">
-                                    </div>
-                                    <div class="texto--lugares">
-                                        <h5 class="card-title">
-                                            <b class="tituloLugar">Salón Luzcina2222.</b>
-                                            <br>
-                                            Xinacatla, Puebla
-                                        </h5>
-                                        <p class="card-text">
-                                            Precio: $900
-                                            <br>
-                                            No. Invitados: 100-500
-                                        </p>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href="./contactanos.html" class="btn btn-primary">
-                                            Quiero más información
-                                        </a>
-                                    </div>
-                                </div><!-- Contenido de la primera tarjeta -->
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card">
-                                <div class="card" style="width: 22rem;">
-                                    <img src="./assets/paginaprincipal/salon-xelhua.jpeg" class="card-img-top"
-                                        alt="...">
-                                    <div class="texto--lugares">
-                                        <h5 class="card-title">
-                                            <b class="tituloLugar">Salón Xelhua.</b>
-                                            <br>
-                                            Cholula, Puebla
-                                        </h5>
-                                        <p class="card-text">
-                                            Precio $750
-                                            <br>
-                                            N° de invitados 200 - 250
-                                        </p>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href="./contactanos.html" class="btn btn-primary">
-                                            Quiero más información
-                                        </a>
-                                    </div>
-                                </div><!-- Contenido de la segunda tarjeta -->
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card">
-                                <div class="card" style="width: 22rem;">
-                                    <img src="./assets/paginaprincipal/salon-aquihuac.jpeg" class="card-img-top"
-                                        alt="...">
-                                    <div class="texto--lugares">
-                                        <h5 class="card-title">
-                                            <b class="tituloLugar">Salón Aquiahuac</b>
-                                            <br>
-                                            Acatepec, Puebla
-                                        </h5>
-                                        <p class="card-text">
-                                            Precio $650
-                                            <br>
-                                            N° de invitados 150 - 200
-                                        </p>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href="./contactanos.html" class="btn btn-primary">
-                                            Quiero más información
-                                        </a>
-                                    </div>
+                            <div class="card" style="width: 22rem;">
+                                <div>
+                                    <img src="./assets/paginaprincipal/salon-lucina.jpeg" class="card-img-top"
+                                        alt="Lugar 1">
                                 </div>
-                            </div><!-- Contenido de la tercera tarjeta -->
+                                <div class="texto--lugares">
+                                    <h5 class="card-title">
+                                        <b class="tituloLugar">Salón Luzcina2222.</b>
+                                        <br>
+                                        Xinacatla, Puebla
+                                    </h5>
+                                    <p class="card-text">
+                                        Precio: $900
+                                        <br>
+                                        No. Invitados: 100-500
+                                    </p>
+                                </div>
+                                <div class="card-body">
+                                    <a href="./contactanos.html" class="btn btn-primary">
+                                        Quiero más información
+                                    </a>
+                                </div>
+                            </div><!-- Contenido de la primera tarjeta -->
                         </div>
+                        <div class="carousel-item">
+                            <div class="card" style="width: 22rem;">
+                                <img src="./assets/paginaprincipal/salon-xelhua.jpeg" class="card-img-top"
+                                    alt="...">
+                                <div class="texto--lugares">
+                                    <h5 class="card-title">
+                                        <b class="tituloLugar">Salón Xelhua.</b>
+                                        <br>
+                                        Cholula, Puebla
+                                    </h5>
+                                    <p class="card-text">
+                                        Precio $750
+                                        <br>
+                                        N° de invitados 200 - 250
+                                    </p>
+                                </div>
+                                <div class="card-body">
+                                    <a href="./contactanos.html" class="btn btn-primary">
+                                        Quiero más información
+                                    </a>
+                                </div>
+                            </div><!-- Contenido de la segunda tarjeta -->
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card" style="width: 22rem;">
+                                <img src="./assets/paginaprincipal/salon-aquihuac.jpeg" class="card-img-top"
+                                    alt="...">
+                                <div class="texto--lugares">
+                                    <h5 class="card-title">
+                                        <b class="tituloLugar">Salón Aquiahuac</b>
+                                        <br>
+                                        Acatepec, Puebla
+                                    </h5>
+                                    <p class="card-text">
+                                        Precio $650
+                                        <br>
+                                        N° de invitados 150 - 200
+                                    </p>
+                                </div>
+                                <div class="card-body">
+                                    <a href="./contactanos.html" class="btn btn-primary">
+                                        Quiero más información
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- BOTONES anterior-siguiente -->
+                        <!-- 1 -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <!-- 2 -->
+                        <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>                        
                     </div>
                 </div>
             </div>
         </section>
         <!-- termina especial -->
+
         <!------------------------ 2da sección LUGARES ----------------->
 
         <section class="normal">
@@ -302,89 +314,94 @@
 
             </div>
         </section>
+
         <!-- inicia especial -->
-        <section class="espera">
+        <section class="espera mb-4">
             <div class="container">
-                <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+                <div id="miCarrusel2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
                     <div class="carousel-inner">
+
                         <!-- Contenido de la primera tarjeta -->
                         <div class="carousel-item active">
-                            <div class="card">
-                                <div class="card" style="width: 22rem;">
-                                    <img src="./assets/paginaprincipal/salon-lienzo.jpeg" class="card-img-top"
-                                        alt="...">
-                                    <div class="texto--lugares">
-                                        <h5 class="card-title">
-                                            <b>Lienzo Charro del Pedregal</b>
-                                            <br>
-                                            Tlalpan, Ciudad de México
-                                        </h5>
-                                        <p class="card-text">
-                                            Precio $1.050
-                                            <br>
-                                            N° de invitados 80 - 700
-                                        </p>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href="./contactanos.html" class="btn btn-primary">
-                                            Quiero más información
-                                        </a>
-                                    </div>
+                            <div class="card" style="width: 22rem;">
+                                <img src="./assets/paginaprincipal/salon-lienzo.jpeg" class="card-img-top"
+                                    alt="...">
+                                <div class="texto--lugares">
+                                    <h5 class="card-title">
+                                        <b>Lienzo Charro del Pedregal</b>
+                                        <br>
+                                        Tlalpan, Ciudad de México
+                                    </h5>
+                                    <p class="card-text">
+                                        Precio $1.050
+                                        <br>
+                                        N° de invitados 80 - 700
+                                    </p>
                                 </div>
-
+                                <div class="card-body">
+                                    <a href="./contactanos.html" class="btn btn-primary">
+                                        Quiero más información
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <!-- Contenido de la segunda tarjeta -->
                         <div class="carousel-item">
-                            <div class="card">
-                                <div class="card" style="width: 22rem;">
-                                    <img src="./assets/paginaprincipal/moezllonz.jpeg" class="card-img-top" alt="...">
-                                    <div class="texto--lugares">
-                                        <h5 class="card-title">
-                                            <b>Moezllonz Jardín</b>
-                                            <br>
-                                            Xochimilco, Ciudad de México
-                                        </h5>
-                                        <p class="card-text">
-                                            Precio $790
-                                            <br>
-                                            N° de invitados 100 - 1,000
-                                        </p>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href="./contactanos.html" class="btn btn-primary">
-                                            Quiero más información
-                                        </a>
-                                    </div>
+                            <div class="card" style="width: 22rem;">
+                                <img src="./assets/paginaprincipal/moezllonz.jpeg" class="card-img-top" alt="...">
+                                <div class="texto--lugares">
+                                    <h5 class="card-title">
+                                        <b>Moezllonz Jardín</b>
+                                        <br>
+                                        Xochimilco, Ciudad de México
+                                    </h5>
+                                    <p class="card-text">
+                                        Precio $790
+                                        <br>
+                                        N° de invitados 100 - 1,000
+                                    </p>
+                                </div>
+                                <div class="card-body">
+                                    <a href="./contactanos.html" class="btn btn-primary">
+                                        Quiero más información
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         <!-- Contenido de la tercera tarjeta -->
                         <div class="carousel-item">
-                            <div class="card">
-                                <div class="card" style="width: 22rem;">
-                                    <img src="./assets/paginaprincipal/salon-veracruzano.jpeg" class="card-img-top"
-                                        alt="...">
-                                    <div class="texto--lugares">
-                                        <h5 class="card-title">
-                                            <b>Centro Veracruzano Coyoacán</b>
-                                            <br>
-                                            Coyoacán, Ciudad de México
-                                        </h5>
-                                        <p class="card-text">
-                                            Precio $740
-                                            <br>
-                                            N° de invitados 100 - 800
-                                        </p>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href="./contactanos.html" class="btn btn-primary">
-                                            Quiero más información
-                                        </a>
-                                    </div>
+                            <div class="card" style="width: 22rem;">
+                                <img src="./assets/paginaprincipal/salon-veracruzano.jpeg" class="card-img-top"
+                                    alt="...">
+                                <div class="texto--lugares">
+                                    <h5 class="card-title">
+                                        <b>Centro Veracruzano Coyoacán</b>
+                                        <br>
+                                        Coyoacán, Ciudad de México
+                                    </h5>
+                                    <p class="card-text">
+                                        Precio $740
+                                        <br>
+                                        N° de invitados 100 - 800
+                                    </p>
+                                </div>
+                                <div class="card-body">
+                                    <a href="./contactanos.html" class="btn btn-primary">
+                                        Quiero más información
+                                    </a>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- BOTONES anterior-siguiente -->
+                        <!-- 1 -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel2" data-bs-slide="prev">
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <!-- 2 -->
+                        <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel2" data-bs-slide="next">
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>                        
                     </div>
                 </div>
             </div>
@@ -402,9 +419,9 @@
             
             <div class="container">
                 <div class="card" style="width: 15rem;">
-                    <img src="./assets/invitaciones/invitacion1.jpeg" class="card-img-top" alt="Invitación-Boda">
+                    <img src="./assets/invitaciones/invitacion1.jpg" class="card-img-top" alt="Invitación-Boda">
                     <div class="texto--lugares">
-                        <h5 class="card-title"><b>Invitación Boda</b></h5>
+                        <h5 class="card-title"><b>Invitación Halloween</b></h5>
                         <p class="card-text">Hasta 100 impresiones</p>
                     </div>
                     <div class="card-body">
@@ -413,9 +430,9 @@
                 </div>
 
                 <div class="card" style="width: 15rem;">
-                    <img src="./assets/invitaciones/invitacion2.jpeg" class="card-img-top" alt="Invitación-Fiesta">
+                    <img src="./assets/invitaciones/invitacion2.jpg" class="card-img-top" alt="Invitación-Fiesta">
                     <div class="texto--lugares">
-                        <h5 class="card-title"><b>Invitación Fiesta</b></h5>
+                        <h5 class="card-title"><b>Invitación Cumple</b></h5>
                         <p class="card-text">Hasta 100 impresiones</p>
                     </div>
                     <div class="card-body">
@@ -424,9 +441,9 @@
                 </div>
 
                 <div class="card" style="width: 15rem;">
-                    <img src="./assets/invitaciones/invitacion3.jpeg" class="card-img-top" alt="Invitación-Boda">
+                    <img src="./assets/invitaciones/invitacion3.jpg" class="card-img-top" alt="Invitación-Boda">
                     <div class="texto--lugares">
-                        <h5 class="card-title"><b>Invitación Boda</b></h5>
+                        <h5 class="card-title"><b>Invitación Disfraces</b></h5>
                         <p class="card-text">Más 100 impresiones</p>
                     </div>
                     <div class="card-body">
@@ -435,9 +452,9 @@
                 </div>
 
                 <div class="card" style="width: 15rem;">
-                    <img src="./assets/invitaciones/invitacion4.jpeg" class="card-img-top" alt="Invitación-Fiesta">
+                    <img src="./assets/invitaciones/invitacion4.jpg" class="card-img-top" alt="Invitación-Fiesta">
                     <div class="texto--lugares">
-                        <h5 class="card-title"><b>Invitación Fiesta</b></h5>
+                        <h5 class="card-title"><b>Invitación Kids</b></h5>
                         <p class="card-text">Hasta 100 impresiones</p>
                     </div>
                     <div class="card-body">
@@ -448,89 +465,95 @@
             </div>
         </section>
 
-        <section class="espera">
+        <!-- Inicia especial -->
+        <section class="espera mb-4">
             <div class="container">
-                <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+                <div id="miCarrusel3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
                     <div class="carousel-inner">
 
                         <div class="carousel-item active">
-                            <div class="card">
-                                <div class="card" style="width: 15rem;">
-                                    <img src="./assets/invitaciones/invitacion1.jpeg" class="card-img-top"
-                                        alt="Invitación-Boda">
-                                    <div class="texto--lugares">
-                                        <h5 class="card-title"><b>Invitación Boda</b></h5>
-                                        <p class="card-text">Hasta 100 impresiones</p>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href="./invitaciones.html" class="btn btn-primary">Gratuito</a>
-                                    </div>
+                            <div class="card" style="width: 15rem;">
+                                <img src="./assets/invitaciones/invitacion1.jpg" class="card-img-top"
+                                    alt="Invitación-Boda">
+                                <div class="texto--lugares">
+                                    <h5 class="card-title"><b>Invitación Boda</b></h5>
+                                    <p class="card-text">Hasta 100 impresiones</p>
                                 </div>
-                                <!-- Contenido de la primera tarjeta -->
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <div class="card">
-                                <div class="card" style="width: 15rem;">
-                                    <img src="./assets/invitaciones/invitacion2.jpeg" class="card-img-top"
-                                        alt="Invitación-Fiesta">
-                                    <div class="texto--lugares">
-                                        <h5 class="card-title"><b>Invitación Fiesta</b></h5>
-                                        <p class="card-text">Hasta 100 impresiones</p>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href="./invitaciones.html" class="btn btn-primary">Gratuito</a>
-                                    </div>
+                                <div class="card-body">
+                                    <a href="./invitaciones.html" class="btn btn-primary">Gratuito</a>
                                 </div>
-                                <!-- Contenido de la segunda tarjeta -->
                             </div>
+                            <!-- Contenido de la primera tarjeta -->
                         </div>
 
                         <div class="carousel-item">
-                            <div class="card">
-                                <div class="card" style="width: 15rem;">
-                                    <img src="./assets/invitaciones/invitacion3.jpeg" class="card-img-top"
-                                        alt="Invitación-Boda">
-                                    <div class="texto--lugares">
-                                        <h5 class="card-title"><b>Invitación Boda</b></h5>
-                                        <p class="card-text">Más 100 impresiones</p>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href="./invitaciones.html" class="btn btn-primary">Premium</a>
-                                    </div>
-                                </div><!-- Contenido de la tercera tarjeta -->
+                            <div class="card" style="width: 15rem;">
+                                <img src="./assets/invitaciones/invitacion2." class="card-img-top"
+                                    alt="Invitación-Fiesta">
+                                <div class="texto--lugares">
+                                    <h5 class="card-title"><b>Invitación Fiesta</b></h5>
+                                    <p class="card-text">Hasta 100 impresiones</p>
+                                </div>
+                                <div class="card-body">
+                                    <a href="./invitaciones.html" class="btn btn-primary">Gratuito</a>
+                                </div>
                             </div>
+                            <!-- Contenido de la segunda tarjeta -->
                         </div>
 
                         <div class="carousel-item">
-                            <div class="card">
-                                <div class="card" style="width: 15rem;">
-                                    <img src="./assets/invitaciones/invitacion4.jpeg" class="card-img-top"
-                                        alt="Invitación-Fiesta">
-                                    <div class="texto--lugares">
-                                        <h5 class="card-title"><b>Invitación Fiesta</b></h5>
-                                        <p class="card-text">Hasta 100 impresiones</p>
-                                    </div>
-                                    <div class="card-body">
-                                        <a href="./invitaciones.html" class="btn btn-primary">Gratuito</a>
-                                    </div>
-                                </div><!-- Contenido de la cuarta tarjeta -->
-                            </div>
+                            <div class="card" style="width: 15rem;">
+                                <img src="./assets/invitaciones/invitacion3.jpeg" class="card-img-top"
+                                    alt="Invitación-Boda">
+                                <div class="texto--lugares">
+                                    <h5 class="card-title"><b>Invitación Boda</b></h5>
+                                    <p class="card-text">Más 100 impresiones</p>
+                                </div>
+                                <div class="card-body">
+                                    <a href="./invitaciones.html" class="btn btn-primary">Premium</a>
+                                </div>
+                            </div><!-- Contenido de la tercera tarjeta -->
                         </div>
+
+                        <div class="carousel-item">
+                            <div class="card" style="width: 15rem;">
+                                <img src="./assets/invitaciones/invitacion4.jpeg" class="card-img-top"
+                                    alt="Invitación-Fiesta">
+                                <div class="texto--lugares">
+                                    <h5 class="card-title"><b>Invitación Fiesta</b></h5>
+                                    <p class="card-text">Hasta 100 impresiones</p>
+                                </div>
+                                <div class="card-body">
+                                    <a href="./invitaciones.html" class="btn btn-primary">Gratuito</a>
+                                </div>
+                            </div><!-- Contenido de la cuarta tarjeta -->
+                        </div>
+
+                        <!-- BOTONES anterior-siguiente -->
+                        <!-- 1 -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel3" data-bs-slide="prev">
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <!-- 2 -->
+                        <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel3" data-bs-slide="next">
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
                     </div>
+                </div>
             </div>
         </section>
 
         <!----------------------- 4ta sección EVENTOS ----------------------->
 
         <section class="normal">
+
             <div class="row">
                 <div class="linea">
                 <h1 class="seccion">
                     EVENTOS
                 </h1>
             </div>
+
             <div class="container">
                 <div class="card" style="width: 21rem;">
                     <img src="./assets/eventos/evento1.jpeg" class="card-img-top" alt="...">
@@ -556,50 +579,58 @@
             </div>
         </section>
 
-        <section class="espera">
+        <!-- Inicia especial -->
+        <section class="espera mb-5">
+
             <div class="container">
 
-                <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+                <div id="miCarrusel4" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
                     <div class="carousel-inner">
 
                         <div class="carousel-item active">
-                            <div class="card">
-                                <div class="card" style="width: 21rem;">
-                                    <img src="./assets/eventos/evento1.jpeg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <a href="./eventos.html" class="btn btn-primary">Reserva</a>
-                                    </div>
+                            <div class="card" style="width: 21rem;">
+                                <img src="./assets/eventos/evento1.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="./eventos.html" class="btn btn-primary">Reserva</a>
                                 </div>
-                                <!-- Contenido de la primera tarjeta -->
                             </div>
+                            <!-- Contenido de la primera tarjeta -->
                         </div>
 
                         <div class="carousel-item">
-                            <div class="card">
-                                <div class="card" style="width: 21rem;">
-                                    <img src="./assets/eventos/evento3.jpeg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <a href="./eventos.html" class="btn btn-primary">Reserva</a>
-                                    </div>
+                            <div class="card" style="width: 21rem;">
+                                <img src="./assets/eventos/evento3.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="./eventos.html" class="btn btn-primary">Reserva</a>
                                 </div>
-                                <!-- Contenido de la segunda tarjeta -->
                             </div>
+                            <!-- Contenido de la segunda tarjeta -->
                         </div>
 
                         <div class="carousel-item">
-                            <div class="card">
-                                <div class="card" style="width: 21rem;">
-                                    <img src="./assets/eventos/evento4.jpeg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <a href="./eventos.html" class="btn btn-primary">Reserva</a>
-                                    </div>
+                            <div class="card" style="width: 21rem;">
+                                <img src="./assets/eventos/evento4.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <a href="./eventos.html" class="btn btn-primary">Reserva</a>
                                 </div>
-                                <!-- Contenido de la tercera tarjeta -->
                             </div>
+                            <!-- Contenido de la tercera tarjeta -->
                         </div>
+
+                        <!-- BOTONES anterior-siguiente -->
+                        <!-- 1 -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel4" data-bs-slide="prev">
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <!-- 2 -->
+                        <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel4" data-bs-slide="next">
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>                        
+
                     </div>
                 </div>
             </div>
+            
         </section>
     </main>
     <div id="modalContainer"></div>
