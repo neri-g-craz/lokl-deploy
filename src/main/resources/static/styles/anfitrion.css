@@ -33,7 +33,26 @@ color: white;
  }
 
 div.container.col-6.p-3 {
-  width: 100%;
+  width: 100%; 
 }
 
+}
+
+/* .soyEspecialEspecial{
+  display: flex;
+  justify-content: center;
+  color: white;
+  align: center;
+} */
+
+.vistaPrevia{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #732796;
+  font-size: 60px;
+  height: 50px;
+  background-color: #ececec;
+  border-radius: 5px;
+  font-family: sans-serif;
 }

@@ -26,11 +26,11 @@ alertaEnviado.addEventListener('click', () => {
 });
 /****************************Inicio Página invitaciones****************************/
 
-document
-  .getElementById("crear-invitacion")
-  .addEventListener("click", () => {
-    scrollToSection("container-crear-invitacion");
-  });
+// document
+//   .getElementById("crear-invitacion")
+//   .addEventListener("click", () => {
+//     scrollToSection("container-crear-invitacion");
+//   });
 
 function scrollToSection(sectionId) {
   // Obtener la posición y desplazarse a la sección deseada

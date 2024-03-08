@@ -1,84 +1,45 @@
-//remote
-const lugarForm = document.querySelector(".form-anfitrion");
-lugarForm.addEventListener('submit', async () => {
-const nombreLugar = document.getElementById("inputNombre").value;
-const tipo_espacio = document.getElementById("inputEspacio").value;
-const capacidad = document.getElementById("inputCapacidad").value;
-const calle = document.getElementById("inputCalle").value;
-const numInt = document.getElementById("inputNumeroInt").value;
-const numExt = document.getElementById("inputNumeroExt").value;
-const alcaldia = document.getElementById("inputAlcaldia").value;
-const estado = document.getElementById("inputEstado").value;
-const codigoPostal = document.getElementById("inputCodigo").value;
-const precio = document.getElementById("inputPrecio").value;
+function generarTarjeta() {
+  var nombre = document.getElementById("inputNombre").value;
+  var espacio = document.getElementById("inputEspacio").value;
+  var capacidad = document.getElementById("inputCapacidad").value;
+  var direccion = document.getElementById("inputCalle").value + ", " +
+                  document.getElementById("inputNumeroExt").value + ", " +
+                  document.getElementById("inputNumeroInt").value + ", " +
+                  document.getElementById("inputAlcaldia").value + ", " +
+                  document.getElementById("inputEstado").value + ", " +
+                  document.getElementById("inputCodigo").value;
+  var precio = document.getElementById("inputPrecio").value;
+  var fotos = document.getElementById("inputFotos").files;
 
-// Obtén una referencia al campo de entrada
-const fileInput = document.getElementById("inputFotos");/*clave*/
+  // Guardar los datos en localStorage
+  var nuevaTarjeta = {
+      nombre: nombre,
+      espacio: espacio,
+      capacidad: capacidad,
+      direccion: direccion,
+      precio: precio,
+      fotos: fotos
+  };
 
-// Escucha el evento "change"
-fileInput.addEventListener("change", function() {
-    // Obtiene el archivo seleccionado
-    const selectedFile = fileInput.files[0];
-/*clave*/
-    // Crea un lector de archivos
-    const reader = new FileReader();
+  var tarjetasGuardadas = JSON.parse(localStorage.getItem('tarjetas')) || [];
+  tarjetasGuardadas.push(nuevaTarjeta);
+  localStorage.setItem('tarjetas', JSON.stringify(tarjetasGuardadas));
 
-    // Cuando se complete la lectura del archivo
-    reader.onload = function(event) {
-        // Obtiene la cadena en formato Base64
-        const base64String = event.target.result.split(",")[1];
-        console.log("Base64:", base64String);
-        // Puedes usar "base64String" como necesites
-    };
+  // Generar la tarjeta en el HTML
+  var tarjetaHTML = `<div class="col-md-4">
+                          <div class="card">
+                              <img src="${URL.createObjectURL(fotos[0])}" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                  <h5 class="card-title">${nombre}</h5>
+                                  <p class="card-text">Tipo de Espacio: ${espacio}</p>
+                                  <p class="card-text">Capacidad: ${capacidad}</p>
+                                  <p class="card-text">Dirección: ${direccion}</p>
+                                  <p class="card-text">Precio: ${precio}</p>
+                              </div>
+                          </div>
+                      </div>`;
+  document.getElementById("tarjetas").innerHTML += tarjetaHTML;
 
-    // Lee el archivo como una URL de datos
-    reader.readAsDataURL(selectedFile);
-});
+  // window.location.href = "miespacio.html";
+}
 
-const lugar = {
-nombre: nombreLugar,
-espacio: tipo_espacio,
-capacidad: capacidad,
-calle: calle,
-no_int: numInt,
-no_ext: numExt,
-alcaldia: alcaldia,
-estado: estado,
-codigo_postal: codigoPostal,
-precio: precio,
-imagen: base64String /*clave*/
-} 
-//const
-const url = 'https://lokl-5jid.onrender.com/admin/lugares';
-// prueba'http://localhost:8080/admin/lugares';
-
-//trycatch
-try{
-const response = await fetch(url, {
-method: 'POST',
- headers: {
-      'Content-Type': 'application/json'
-    },
-   body: JSON.stringify(lugar)
- });
-
- if (!response.ok) {
-    throw new Error('Error al registrar el lugar');
-  }
-  const data = await response.json();
- console.log(data);
-  return alert('¡Lugar creado con éxito!'); 
-   window.location.href = './miespacio.html';
- }catch(error) {
-   console.error('Error al crear el lugar:', error);
- 
- } 
-
-})
-
-  const botonCrearEvento = document.getElementById('BotonAnunciar');
-    BotonAnunciar.addEventListener('submit', function() {
-        
-        alert("¡Anuncio creado con éxito!");
-        window.location.href = "anfitrion.html";
-    });

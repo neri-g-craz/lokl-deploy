@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap'); /* JALDI 400 párrafos */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap'); /* QUICKSAND 400 botones */
 
+header{
+  box-shadow: 0 5px 10px 2px #ccc !important;
+}
+
 .titulo_lugares {
   text-align: center;
   margin: 2px;
@@ -29,13 +33,32 @@
 
   /*estilos de boton guardar*/
   
-  #guardarTarjeta{
-background-color: #732796;
-color: #f9f9f9;
-border-radius: 5px;
-margin-top: 15px;
-padding: 5px 10px;
-border: none;
 
+
+  
+  #guardarTarjeta {
+    background-color: #732796;
+    color: #f9f9f9;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 5px 10px;
+    border: none;
+    transition: transform 0.3s; 
   }
+  
+  #guardarTarjeta:hover {
+    transform: scale(1.1); 
+  }
+  
+
+  .btn-primary{
+    transition: transform 0.3s; 
+  }
+  
+  .btn-primary:hover {
+    transform: scale(1.1); 
+  }
+  
+
+  
 

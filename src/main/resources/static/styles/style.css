@@ -30,6 +30,7 @@ header {
   justify-content: space-between;
   padding: 10px;
   background-color: #ececec;
+  box-shadow: 0 5px 10px 2px #ccc !important;
 }
 .logo {
   max-width: 200px;
